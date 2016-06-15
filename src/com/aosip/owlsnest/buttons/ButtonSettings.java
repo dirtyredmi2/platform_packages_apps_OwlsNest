@@ -111,4 +111,8 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
         onPreferenceScreenLoaded(ActionConstants.getDefaults(ActionConstants.HWKEYS));
     }
 
+    @Override
+    protected boolean usesExtendedActionsList() {
+        return true;
+    }
 }
